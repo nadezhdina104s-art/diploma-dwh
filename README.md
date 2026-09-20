@@ -8,7 +8,7 @@ sales.csv → [Airflow DAG] → NDS (3NF) → DDS (звезда) → Marts → T
 ↓
 Data Quality + etl_run_log
 
-text
+
 
 ## Стек
 
@@ -29,8 +29,6 @@ diploma-dwh/
 ├── logs/ # Логи Airflow
 ├── docker-compose.yml
 └── requirements.txt
-
-text
 
 ## Быстрый старт
 
