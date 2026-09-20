@@ -1,0 +1,13 @@
+﻿payment_name,customer_type,gender,cnt,revenue
+Cash,Member,Male,78,24746.6835
+Cash,Normal,Female,88,29599.8780
+Credit card,Normal,Female,73,22494.9900
+Credit card,Member,Male,82,26768.0175
+Ewallet,Member,Male,80,24561.7995
+Ewallet,Member,Female,81,27229.1565
+Ewallet,Normal,Female,79,27641.1135
+Credit card,Normal,Male,66,20500.6095
+Cash,Normal,Male,88,27945.6765
+Credit card,Member,Female,90,31003.4550
+Cash,Member,Female,90,29914.3320
+Ewallet,Normal,Male,105,30561.0375
