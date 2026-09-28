@@ -19,6 +19,7 @@ Data Quality + etl_run_log
 - Tableau Public — визуализация
 
 ## Структура репозитория
+```
 diploma-dwh/
 ├── dags/ # Airflow DAG
 ├── etl/ # Python-скрипты ETL
@@ -29,7 +30,7 @@ diploma-dwh/
 ├── logs/ # Логи Airflow
 ├── docker-compose.yml
 └── requirements.txt
-
+```
 ## Быстрый старт
 
 ```bash
@@ -39,9 +40,9 @@ docker compose up -d
 # Airflow UI: http://localhost:8080 (admin/admin)
 # PostgreSQL: localhost:5432 (airflow/airflow, БД dwh)
 Далее — Trigger DAG sales_etl_pipeline в Airflow UI.
-
+```
 ## Документация
-
+```
 - [Архитектура](docs/01_architecture.md)
 - [Источник данных](docs/02_source_data.md)
 - [Слой NDS](docs/03_nds.md)
@@ -51,3 +52,4 @@ docker compose up -d
 - [Витрины](docs/07_marts.md)
 - [Дашборды](docs/08_dashboards.md)
 - [Развёртывание](docs/09_deployment.md)
+```
