@@ -15,7 +15,7 @@
 
 Таблица dq_report заполняется на каждом запуске задачи dq_check:
 
-```sql
+```
 CREATE TABLE dq_report (
     report_id          BIGSERIAL PRIMARY KEY,
     run_date           DATE NOT NULL,
@@ -28,6 +28,7 @@ CREATE TABLE dq_report (
     rating_out_of_rng  INT,
     created_at         TIMESTAMP DEFAULT NOW()
 );
+```
 6.3. Результаты проверки
 По датасету sales.csv (1000 строк):
 
@@ -49,8 +50,9 @@ dq_check бросает ValueError и останавливает DAG. Downstream
 6.5. Мониторинг качества
 Запрос для проверки качества по всем запускам:
 
-sql
+```
 SELECT run_date, row_count, tax_mismatch, total_mismatch,
        rating_out_of_rng
 FROM dq_report
 ORDER BY report_id DESC;
+```
