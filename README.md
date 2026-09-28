@@ -4,20 +4,21 @@
 на основе датасета sales.csv (1000 транзакций, Q1 2019, 3 филиала в Мьянме).
 
 ## Архитектура
+```
 sales.csv → [Airflow DAG] → NDS (3NF) → DDS (звезда) → Marts → Tableau
 ↓
 Data Quality + etl_run_log
-
+```
 
 
 ## Стек
-
+```
 - Python 3.10 — ETL (pandas, SQLAlchemy)
 - PostgreSQL 15 — хранилище (NDS + DDS + Marts)
 - Apache Airflow 2.8 — оркестрация
 - Docker Compose — развёртывание
 - Tableau Public — визуализация
-
+```
 ## Структура репозитория
 ```
 diploma-dwh/
