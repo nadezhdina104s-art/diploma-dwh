@@ -10,7 +10,7 @@ Owner: data_engineer
 ## 5.2. Граф задач
 extract → transform → dq_check → load_nds → load_dds → build_marts
 
-text
+
 
 | № | Task | Что делает | Выход |
 |---|---|---|---|
